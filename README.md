@@ -10,8 +10,8 @@ MainColumnGeneration.m    |  Solves BPP relaxations using column generation usin
 The rest of the files are helper files. Please ensure Matlab has acces to these files when running the main files.
 All three main files should be self-explanatory, but here follows a brief instruction.
 
-HOW TO CREATE A POLICY IN MainPolicyCreation.m:\\
--Specify T,N, and k that the define the TMDP encompassing the KnapsackProblem (section 5.2).\\
+HOW TO CREATE A POLICY IN MainPolicyCreation.m:\n
+-Specify T,N, and k that the define the TMDP encompassing the KnapsackProblem (section 5.2).\n
 -Specify the number of rows and columns for the (m,n)-Grid-Approximation (section 5.3).\\
 -Specify what generator to use as D_0 (can be any of the pisinger generators in the helperFiles) or give a folder location with presampled instances.\\
 -Choose an initial policy. This can be 'greedy', 'k-uniform', or any previously trained policy.\\

@@ -43,6 +43,7 @@ Using a policy on its corresponding dataset will yield the results presented in 
 - Specify whether you want to print a LaTeX table.  
 - Specify whether you want to save the used BPP instances.  
 - Specify which heuristics you wish to use for the subroutine.  
-  The heuristic for "improved" must match the filename as in line 131.  
+  The heuristic for "improved" must match the filename as in line 131.
+  In Case Gurobi is unavailable, in line 70 of 'BPP_CG_solver.m' change 's.GurobiSolve(0,inf,0,subsol)' to 's.BPsolve' to use Matlab's built-in solver. Note that different optimal solutions may be returned, which will affect the total solving trajectory. 
 
 Summarizing statistics are printed at the end of the program.  
